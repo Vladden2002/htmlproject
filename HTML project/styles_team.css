@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    backdrop-filter: blur(1000px);
+
+}
+#navbar_logo{
+    background-color: #E8A87C;
+    background-image: linear-gradient(to top, #ff6600, #e8892a, 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.fa-gem{
+    margin-right: 0.5rem;
+}
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navbar_item{
+    height: 80px;
+}
+.navbar_links{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 1rem;
+    height: 100%;
+}
+.team{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url("images/backgound_img.png");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    overflow: hidden;
+}
+.container{
+    text-align: center;
+}
+.header{
+    padding-top: 60px;
+    color: #ffffff;
+    font-size: 18px;
+    margin: auto;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.teams:hover{
+    background: #306f55;
+    border: 12px;
+}
+
+.teams img{
+    width: 200px;
+    height: 200px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig{
+    font-style: italic;
+    color: #747373;
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #b1b0b0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-links{
+    margin: 14px;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+.social-links a:hover{
+    transform: scale(1.5);
+}
+
+.social-links a i{
+    color: #000000;
+}
+
+@media screen and (max-width: 600px){
+    .teams{
+        max-width: 100%;
+    }
+}
